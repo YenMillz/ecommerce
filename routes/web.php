@@ -13,6 +13,8 @@ Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
 Route::get('/shop/search/{query}', 'ShopController@search')->name('shop.search');
 
+// About
+Route::get('/about', 'AboutController@index')->name('about.index');
 
 // Cart
 Route::get('/cart', 'CartController@index')->name('cart.index');
